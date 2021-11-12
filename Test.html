@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<p id="test"></p>
+<p id="test1"></p>
+<script>
+    for(let i in[1,6,3,8]){
+        document.getElementById('test').innerText+=(i);
+    }
+
+    for(let j of[1,6,3,8]){
+        document.getElementById('test1').innerText+=(j);
+    }
+</script>
+</body>
+</html>
