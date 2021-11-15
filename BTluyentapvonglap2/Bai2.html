@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+
+<script>
+    let number = +prompt("Nhạp vào 1 số nguyên dương: ");
+    let mul = 1;
+    if (number <= 0){
+        alert("Nhập lại số nguyên dương:");
+    }else {
+        for (let count =1 ; count <= number; count++){
+            mul = mul*count;
+        }
+        alert("Giai thừa của "+number+" là: "+ mul);
+    }
+
+</script>
+</body>
+</html>

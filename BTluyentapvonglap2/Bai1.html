@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<p id="display"></p>
+    <script>
+        let countNum = prompt("Nhập số lượng số muốn in ra: ")
+        let number1 =0;
+        let number2 =1;
+        let fiBo =0;
+        for(let count =1; count <= countNum; count++){
+        fiBo = number1+number2;
+        number1 = number2
+        number2 = fiBo
+        document.getElementById("display").innerHTML +=(fiBo+"<br>");
+        }
+
+</script>
+</body>
+</html>
