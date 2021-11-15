@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<p id="display"></p>
+<script>
+    let number1 =0;
+    let number2 =1;
+    let fiBo =0;
+    for(let count =1; count <= 20; count++){
+        fiBo = number1+number2;
+        number1 = number2
+        number2 = fiBo
+        if (fiBo % 5 ===0){
+            document.getElementById("display").innerHTML =(fiBo);
+            break;
+        }
+
+    }
+
+</script>
+</body>
+</html>

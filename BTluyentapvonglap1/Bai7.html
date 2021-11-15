@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<p id="display"></p>
+<script>
+    for (let numBer = 1; numBer <= 100; numBer++){
+        if(numBer % 3 ===0 && numBer % 5 === 0){
+            document.getElementById("display").innerHTML += ("FizzBuzz"+"<br>");
+        }else{
+            if(numBer % 3 ===0){
+                document.getElementById("display").innerHTML += ("Fizz"+"<br>");
+            }else {
+                if(numBer % 5 ===0) {
+                    document.getElementById("display").innerHTML += ("Buzz" + "<br>");
+                }else {
+                    document.getElementById("display").innerHTML += (numBer + "<br>");
+                }
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

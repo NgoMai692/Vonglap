@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+</head>
+<body>
+<h1>Hãy thử đoán xem!</h1>
+<input type="button" value="Chơi" onclick="choi()">
+<script>
+    function choi(){
+        let number1 = +prompt("Nhập số đầu tiên trong khoảng: ");
+        let number2 = +prompt("Nhập số kết thúc khoảng: ");
+        let count = 0;
+        while (count < 3){
+            let choiNum = +prompt("Nhập số dự đoán: ");
+            if(number1 < number2){
+                if (choiNum < number1 || choiNum >number2){
+                    alert("Số bạn đoán không nằm trông khoảng!");
+                    count++
+                }else{
+                    randomNum = taoSoNgauNhien(number1,number2);
+                    if (randomNum === choiNum){
+                        alert("Bạn đã đoán trúng!");
+                        break;
+                    }else{
+                        alert("Bạn đã đoán sai! Hãy nhập lại");
+                        count++
+                    }
+                }
+
+            }else {
+                alert("Nhập lại khoảng đi!");
+                break;
+
+            }
+        }
+
+
+    }
+
+    function taoSoNgauNhien(min,max){
+        return Math.floor(Math.random()*(max-min+1))+min;
+    }
+
+  
+</script>
+</body>
+</html>

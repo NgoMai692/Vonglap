@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<p id="display"></p>
+<body>
+<script>
+    let number1 =0;
+    let number2 =1;
+    let fiBo =0;
+    let sum =0;
+    for(let count =1; count <= 20; count++){
+        fiBo = number1+number2;
+        number1 = number2;
+        number2 = fiBo;
+        sum += sum + fiBo;
+        document.getElementById("display").innerHTML +=(fiBo +"<br>");
+    }
+    document.getElementById("display").innerHTML +=("Tổng 20 số đầu tiên trong dãy fibonacci là: "+ sum +"<br>");
+
+</script>
+</body>
+</html>

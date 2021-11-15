@@ -9,12 +9,12 @@
 
 <script>
     let inputNumber = prompt("Nhập vào số nguyên tố cần in: ");
-    let count = 0,count1 = 0;
     let divNumber = 2;
     let isSnt=true;
 
     if (inputNumber > 0){
-        for (count = 0;count <= inputNumber; count++ ){
+        for (let count = 0;count <= inputNumber;){
+            isSnt = true;
             for (count1 = 2 ;count1 < divNumber; count1++){
                 if (divNumber!==2 && divNumber % count1 === 0){
                     isSnt = false;
@@ -22,11 +22,8 @@
                 }
             }
             if (isSnt){
+                count++;
                 document.getElementById("display").innerHTML += (divNumber +"<br>");
-            }
-            else {
-                isSnt = true;
-                count--;
             }
             divNumber++;
         }
